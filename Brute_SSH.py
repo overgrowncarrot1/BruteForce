@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+RHOST = "192.168.167.66"
+RPORT = 22
+USERNAME = "msfadmin"
+PASSFILE = "pass.txt"
+a = 0
+
 import urllib
 import os
 from os import system
@@ -27,12 +33,6 @@ RED   = Fore.RED
 RESET = Fore.RESET
 BLUE  = Fore.BLUE
 MAGENTA  = Fore.MAGENTA
-
-RHOST = "192.168.167.66"
-RPORT = 22
-USERNAME = "msfadmin"
-PASSFILE = "pass.txt"
-a = 0
 
 Conv_RPORT = RPORT
 
