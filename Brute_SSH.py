@@ -9,13 +9,10 @@ from urllib import request
 check_path = 'requirements.txt'
 check_file = os.path.isfile(check_path)
 if check_file != True:
+	with open("requirements.txt", "w") as q:
+		q.write('pwntools\ncolorama\n')
 	print('Downloading tools that are needed')
-	remote_url=''
 	local_file='requirements.txt'
-	request.urlretrieve(remote_url, local_file)
-	print('Installing requirements.txt')
-	system("pip3 install -r requirements.txt --break-system-packages \n")
-else:
 	print('Installing requirements.txt')
 	system("pip3 install -r requirements.txt --break-system-packages \n")
 
